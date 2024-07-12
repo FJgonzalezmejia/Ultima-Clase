@@ -86,4 +86,8 @@ public class UserController {
         }
         //return new ResponseEntity<>(userService.deleteUser(idUser), HttpStatus.OK);
     }
+
+    private void crearUser(){
+        userService.createUser(new UserRequestDto("Juan","Juan123","Juanexample@gmail.com"));
+    }
 }
